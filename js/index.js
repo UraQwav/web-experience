@@ -1,5 +1,5 @@
 'use strict';
-
+var counter =0;
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 // ——————————————————————————————————————————————————
@@ -14,14 +14,17 @@ var TextScramble = function () {
     this.chars = '!<>-_\\/[]{}—=+*^?#________';
     this.update = this.update.bind(this);
   }
-
+  
   TextScramble.prototype.setText = function setText(newText) {
     var _this = this;
-
+    
     var oldText = this.el.innerText;
     var length = Math.max(oldText.length, newText.length);
     var promise = new Promise(function (resolve) {
       return _this.resolve = resolve;
+    });
+    var stop=new Promise(function (resolve) {
+      return false;
     });
     this.queue = [];
     for (var i = 0; i < length; i++) {
@@ -34,6 +37,15 @@ var TextScramble = function () {
     cancelAnimationFrame(this.frameRequest);
     this.frame = 0;
     this.update();
+    counter = (counter + 1) % phrases.length;
+    if(counter===0){
+     document.getElementById('id').classList.add('hiden');
+     setTimeout(function(){
+        document.getElementById('id').remove();
+        document.getElementById('id2').classList.remove('main-container-before');
+        document.getElementById('id2').classList.add('main-container-after');}, 3100);
+     return stop;
+    }
     return promise;
   };
 
@@ -81,18 +93,18 @@ var TextScramble = function () {
 // Example
 // ——————————————————————————————————————————————————
 
-var phrases = ['Hi!', 'My name is Sergei', 'And I', 'Junior Web developer'];
+var phrases = ['Hi!', 'My name is Sergei', 'And I`m', 'Junior Web developer'];
 
 var el = document.querySelector('.text');
 var fx = new TextScramble(el);
 
-var counter = 0;
+//var counter = 0;
 var next = function next() {
     
   fx.setText(phrases[counter]).then(function () {
     setTimeout(next, 800);
   });
-  counter = (counter + 1) % phrases.length;
+  //counter = (counter + 1) % phrases.length;
 
 };
 document.body.onload = function(){next();}
