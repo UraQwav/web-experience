@@ -54,10 +54,10 @@ a:hover
    }
    @keyframes visablediv{
       0%{
-         background-position-y: 1000px;
+        margin-top: 1000px;
       }
       100%{
-         background-position-y: 0px;
+         margin-top: 0px;
       }
    }
 
@@ -89,11 +89,12 @@ a:hover
    background: transparent;
    display: flex;
    align-items: center;
+   
 }
    #menuToggle
 {
   display: block;
-  position: relative;
+  position: fixed;
   
   z-index: 1;
   

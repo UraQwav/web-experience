@@ -39,11 +39,11 @@ var TextScramble = function () {
     this.update();
     counter = (counter + 1) % phrases.length;
     if(counter===0){
-     document.getElementById('id').classList.add('hiden');
+     document.getElementById('textWrap').classList.add('hiden');
      setTimeout(function(){
-        document.getElementById('id').remove();
-        document.getElementById('id2').classList.remove('main-container-before');
-        document.getElementById('id2').classList.add('main-container-after');}, 3100);
+        document.getElementById('textWrap').remove();
+        document.getElementById('contentShow').classList.remove('main-container-before');
+        document.getElementById('contentShow').classList.add('main-container-after');}, 3100);
      return stop;
     }
     return promise;
