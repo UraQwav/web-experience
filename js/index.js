@@ -43,7 +43,8 @@ var TextScramble = function () {
      setTimeout(function(){
         document.getElementById('textWrap').remove();
         document.getElementById('contentShow').classList.remove('main-container-before');
-        document.getElementById('contentShow').classList.add('main-container-after');}, 3100);
+        document.getElementById('contentShow').classList.add('main-container-after');
+      }, 3100);
      return stop;
     }
     return promise;

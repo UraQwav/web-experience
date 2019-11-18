@@ -54,10 +54,21 @@ a:hover
    }
    @keyframes visablediv{
       0%{
-        margin-top: 1000px;
+        background-position-y: 1000px;
       }
       100%{
-         margin-top: 0px;
+         background-position-y: 0px;
+      }
+   }
+   @keyframes visableHeader{
+      0%{
+        opacity: 0;
+      }
+      70%{
+         opacity: 0;
+      }
+      100%{
+        opacity: 1;
       }
    }
 
@@ -65,15 +76,13 @@ a:hover
       display: none;
    }
    .main-container-background{
-      background-image: url('../img/ai-blur-codes-577585.jpg');
+      background-image: url('../img/programmer-programming-code-routine-minimalist-a1918.jpg');
       background-repeat: no-repeat;
       background-size: 100%;
    }
    .main-container-after{
-      display: flex;
       width: 100%;
       height: 100%;
-      
       animation:  1s  visablediv;
    }
   .header{
@@ -81,6 +90,7 @@ a:hover
      justify-content: space-between;
      width: 100%;
      height: 5rem;
+     animation:  1.25s  visableHeader;
   }
 .header-short-menu{
    margin: 0rem;
@@ -95,11 +105,10 @@ a:hover
 {
   display: block;
   position: fixed;
-  
   z-index: 1;
-  
   -webkit-user-select: none;
   user-select: none;
+  margin-top: -0.5rem;
 }
 
 #menuToggle input
@@ -212,3 +221,22 @@ a:hover
 .header-menu-item:hover a{
    color: #fff;
 }
+.content-about-me{
+   display: flex;
+   justify-content: space-between;
+   height: 35rem;
+}
+/* .content-about-me-photo{
+   margin: 2rem;
+   border-radius: 50%;
+   width: 20rem;
+   height: 20rem;
+   background-color: #f6d327;
+   background-image: linear-gradient(315deg, #f6d327 0%, #de4daa 74%);
+} */
+.content-about-me-photo img{
+   margin: 2rem;
+   border-radius: 50%;
+   width: 20rem;
+   height: 20rem;
+}x
