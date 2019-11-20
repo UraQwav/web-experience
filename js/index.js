@@ -44,7 +44,7 @@ var TextScramble = function () {
         document.getElementById('textWrap').remove();
         document.getElementById('contentShow').classList.remove('main-container-before');
         document.getElementById('contentShow').classList.add('main-container-after');
-      }, 0);//3100
+      }, 3100);//3100
      return stop;
     }
     return promise;
@@ -103,7 +103,7 @@ var fx = new TextScramble(el);
 var next = function next() {
     
   fx.setText(phrases[counter]).then(function () {
-    setTimeout(next, 0);//800
+    setTimeout(next, 800);//800
   });
   //counter = (counter + 1) % phrases.length;
 
