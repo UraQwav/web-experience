@@ -1,10 +1,13 @@
    /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
    @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+   @import 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf';
    html,
    body {
    font-family: 'Roboto Mono', monospace;
    background: #212121;
    height: 100%;
+   margin: 0;
+   padding: 0;
    }
    a
 {
@@ -239,4 +242,18 @@ a:hover
    border-radius: 50%;
    width: 20rem;
    height: 20rem;
-}x
+}
+
+@media only screen and (min-width: 600px) {
+  .header-short-menu{
+      display: none;
+   } 
+   .header{
+      justify-content: flex-end;
+   }
+ }
+ @media only screen and (max-width: 600px) {
+   .header-menu{
+       display: none;
+    }   
+  }

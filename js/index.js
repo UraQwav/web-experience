@@ -44,7 +44,7 @@ var TextScramble = function () {
         document.getElementById('textWrap').remove();
         document.getElementById('contentShow').classList.remove('main-container-before');
         document.getElementById('contentShow').classList.add('main-container-after');
-      }, 3100);
+      }, 0);//3100
      return stop;
     }
     return promise;
@@ -103,9 +103,15 @@ var fx = new TextScramble(el);
 var next = function next() {
     
   fx.setText(phrases[counter]).then(function () {
-    setTimeout(next, 800);
+    setTimeout(next, 0);//800
   });
   //counter = (counter + 1) % phrases.length;
 
 };
-document.body.onload = function(){next();}
+document.body.onload = function(){next();
+ }
+
+
+
+
+
