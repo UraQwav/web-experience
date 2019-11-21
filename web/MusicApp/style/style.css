@@ -233,6 +233,9 @@ body{
     .header-menu-item-sign{
         margin-right: 0;
     }
+    .content-img img{
+        width: 80wh;
+    }
 }
 @media only screen and (min-width: 1800px) {
     .body-background{
