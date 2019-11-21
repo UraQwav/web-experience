@@ -211,13 +211,12 @@ body{
     color: #9330ce;
     animation:  1.5s visablerighttext;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px){
     .body-background{
         background-size: auto;
     } 
-    
 }
-@media only screen and(max-width:600px){
+@media only screen and (max-width: 600px){
     .content-text-right{
         font-size: 28pt;
     }
@@ -228,14 +227,17 @@ body{
         display: none;
     }
     .header-logo{
-        margin-left: 0;
+        margin-left: 1rem;
     }
     .header-menu-item-sign{
-        margin-right: 0;
+        margin-right: 0.5rem;
     }
     .content-img img{
         width: 80wh;
     }
+    .body-background{
+        background-size: auto;
+    } 
 }
 @media only screen and (min-width: 1800px) {
     .body-background{
