@@ -221,6 +221,9 @@ body{
     .content-text-left{
         font-size: 32pt;
     }
+    .header-menu-item{
+        display: none;
+    }
 }
 @media only screen and(max-width:600px){
 
