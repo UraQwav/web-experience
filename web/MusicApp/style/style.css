@@ -215,6 +215,9 @@ body{
     .body-background{
         background-size: auto;
     } 
+    
+}
+@media only screen and(max-width:600px){
     .content-text-right{
         font-size: 28pt;
     }
@@ -224,9 +227,12 @@ body{
     .header-menu-item{
         display: none;
     }
-}
-@media only screen and(max-width:600px){
-
+    .header-logo{
+        margin-left: 0;
+    }
+    .header-menu-item-sign{
+        margin-right: 0;
+    }
 }
 @media only screen and (min-width: 1800px) {
     .body-background{
