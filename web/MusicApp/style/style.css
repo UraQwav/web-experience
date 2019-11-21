@@ -233,7 +233,8 @@ body{
         margin-right: 0.5rem;
     }
     .content-img img{
-        width: 50vw;
+        width: auto;
+        height:50vh;
     }
     .body-background{
         background-size: auto;
