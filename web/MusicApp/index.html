@@ -6,9 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style/style.css">
-    <title>Listen music evry day :)</title>
+    <title>Listen music every day :)</title>
 </head>
 <body>
+        <div class="media-player-audio-hiden" id="player">
+            <div class="media-player-audio-header">
+                <div class="media-player-audio-header-logo" onclick="BackToPlayList()">
+                    <div class="media-player-audio-header-logo-circle"></div>
+                    <div class="media-player-audio-header-logo-text">You&nbspmusic</div>
+                </div>
+                <div class="media-player-audio-header-menu">
+                    <div class="media-player-audio-header-menu-item">Music</div>
+                    <div class="media-player-audio-header-menu-item">Library</div>
+                    <div class="media-player-audio-header-menu-item-sign">Sign&nbspUp</div>
+                </div>
+            </div>
+        </div>
     <div class="body-background"></div>
     <div class="header">
         <div class="header-logo">
@@ -22,7 +35,7 @@
         </div>
     </div>
     <div class="content-hiden" id="contentShow">
-        <div class="content-text-left">Music&nbspit`s</div>
+        <div class="content-text-left">Music&nbspis</div>
         <div class="content-img">
             <div class="circle">
                 <div class="content-circle"></div>
@@ -31,6 +44,49 @@
         </div>
         <div class="content-text-right">MY&nbspLIFE</div>
     </div>
+    <div class="main-container-hiden" id="main-music">
+        <div class="music">
+            <div class="music-play">
+                <div class="music-play-list-preview" onclick="OpenPlayer()">
+                    <img src="../../img/BC0GEF.jpg" alt="">
+                    <div class="play-button">
+                        <img src="../../img/play-button-purple.png" alt="">
+                    </div>
+                </div>
+                <div class="music-play-list-preview">
+                    <img src="../../img/Anime-Anime-Original-Anime-Art-Ryu-Takashi-1576880.jpeg" alt="">
+                    <div class="play-button">
+                        <img src="../../img/play-button-purple.png" alt="">                    
+                    </div>
+                </div>
+                <div class="music-play-list-preview">
+                    <img src="../../img/MoTa8Q.jpg" alt="">
+                    <div class="play-button">
+                        <img src="../../img/play-button-purple.png" alt="">                    
+                    </div>
+                </div>
+                <div class="music-play-list-preview">
+                    <img src="../../img/mountains_nature_sky_water-1484871.jpg!d.jpg" alt="">
+                    <div class="play-button">
+                        <img src="../../img/play-button-purple.png" alt="">                  
+                    </div>
+                </div>
+                <div class="music-play-list-preview">
+                    <img src="../../img/1528874454985-cyberpunk.jpeg" alt="">
+                    <div class="play-button">
+                        <img src="../../img/play-button-purple.png" alt="">                    
+                    </div>
+                </div>
+                <div class="music-play-list-preview">
+                    <img src="../../img/67373013_663981440771037_5214251972740573306_n.jpg" alt="">
+                    <div class="play-button">
+                        <img src="../../img/play-button-purple.png" alt="">                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <script src="js/index.js"></script>
 </body> 
 </html>
