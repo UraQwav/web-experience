@@ -21,3 +21,18 @@ function BackToPlayList(){
     document.getElementById('player').classList.remove('media-player-audio');
     document.getElementById('player').classList.add('media-player-audio-hiden');
 }
+var playPause=true;
+function PlayMusic(){
+  var myaudio =document.getElementById('music-weekly-top-audio');
+  var playPauseImage = document.getElementById('play-button-change-img');
+  if(playPause){
+    myaudio.play();
+    playPauseImage.src="../../img/9TRRbyqjc - Copy-02.png";
+    playPause = false;
+  }
+  else{
+    myaudio.pause();
+    playPauseImage.src="../../img/play-button-purple.png";
+    playPause = true;
+  }
+}
