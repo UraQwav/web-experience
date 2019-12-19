@@ -137,7 +137,6 @@ padding-bottom: 80px;
     border-radius: 10px;
 }
 .footer{
-    margin:0 10vw;
     margin-top:15vh;
     background: #414141;
     display: flex;
@@ -239,7 +238,7 @@ padding-bottom: 80px;
 #menuToggle input:checked ~ span
 {
   opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
+  transform: rotate(44deg) translate(0px, 0px);
   background: #232323;
 }
 
@@ -251,14 +250,14 @@ padding-bottom: 80px;
 
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
-  transform: rotate(-45deg) translate(0, -1px);
+  transform: rotate(-44deg) translate(0px, 0px);
 }
 
 #menu
 {
   position: fixed;
   width: 300px;
-  margin: -100px 0 0 -80vw;
+  margin: -100px 0 0 -86vw;
   padding: 50px;
   padding-top: 125px;
   height:100vh;
