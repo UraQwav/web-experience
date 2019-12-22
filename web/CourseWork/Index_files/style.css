@@ -1,0 +1,199 @@
+﻿/*оформление страниц*/
+body{
+	background:url('image/641012.jpg');
+	background-size: 150%;
+	background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 20px; 
+	color: #FFFFFF; 
+}
+p{
+	margin:0px;
+	text-indent:30px;
+
+}
+input{
+	font-size:20px;
+	width:100%;
+	border-radius:10px;
+	padding:2px 10px;
+}
+.heder_text{
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+}
+/*оформление модальных окон*/
+.bg{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: #000;
+	opacity:0.5;
+	z-index:100;
+	cursor: pointer;
+}
+.alert_message{
+	position:fixed;
+	top:50%;
+	left:50%;
+	width:300px;
+	height:430px;
+	margin-left:-150px;
+	margin-top:-215px;
+	padding:10px;
+	border:none;
+	border-radius:10px;
+	background:#fff;
+	color:#000;
+	z-index:1000;
+}
+.alert_message input, .alert_message button{
+	margin:2px;
+	width:100%;
+	border:none;
+	border-radius: 5px;
+	font-size:14px;
+}
+/*оформление диалогового модуля*/
+.dialog{
+	position:fixed;
+	top:50%;
+	left:100%;
+	width:300px;
+	height:380px;
+	margin-left:-25px;
+	margin-top:-215px;
+	padding:10px;
+	border:none;
+	border-radius:10px;
+	background:#fff;
+	color:#000;
+	z-index:1500;
+	font-size:12pt;
+}
+.label{
+	width:50px;
+	height:50px;
+	text-align:center;
+	
+	display:inline-block;
+	background: #0881fa;
+	cursor:pointer;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	top: 85%;
+	left: 90%;
+	border: 5px solid rgba(255, 255, 255, 0);
+	animation: 1.5s bor infinite linear;
+	
+}
+@keyframes bor{
+	0% { border: 5px solid #076cd1;}
+	100% { }
+  } 
+ .header{
+	text-align:center;
+	height: 38px;
+	border-bottom: 2px solid
+	#f0f0f0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color:
+	#131313;
+}
+
+.history{
+	height: 255px;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+.dialog input{
+	margin:2px 25px;
+	width:85%;
+	border:none;
+	border-radius: 5px;
+	font-size:14px;
+	height: 38px;
+}
+.dialog button{
+	margin:2px 25px;
+	width:85%;
+	border:none;
+	border-radius: 5px;
+	font-size:14px;
+	height: 38px;
+}
+.dialog .history{
+	width:100%;
+	border:none;
+	border-radius: 5px;
+	font-size:14px;
+}
+.question{
+	border-top: 2px solid #f0f0f0;
+}
+.dialog .history .question, .dialog .history .answer{
+	margin:5px;
+	margin-bottom: 15px;
+	width:60%;
+	padding:5px;
+	min-height: 38px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.dialog .history .question{
+	margin-left:40%;
+	background:#0881fa;	
+	color:#fff;
+	border-bottom-right-radius: 19px;
+	border-top-left-radius:  19px;
+	border-bottom-left-radius:  19px;
+	width:40%;
+}
+.dialog .history .answer{
+	margin-right:20px;
+	background:#f0f0f0;
+	color:#131313;
+	border-bottom-right-radius: 19px;
+	border-bottom-left-radius:  19px;
+	border-top-right-radius:  19px;
+}
+/*оформление картинок в диалоге*/
+.dialog .history .answer img,.dialog .history .answer embed,.dialog .history .answer audio,.dialog .history .answer video{
+	cursor: pointer;
+	display: block;
+	max-width: 160px;
+}
+/*оформление крупного плана картинок*/
+#imgalert{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	margin: 0;
+	padding:0;
+	z-index:2000;
+}
+#img_in_alert{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	position: relative;
+	margin: auto;
+	z-index:2000;
+	background: white;
+	border: 2px solid black;
+	margin-top: -10px;
+}
+.smoll_letter{ vertical-align:sub; font-size:12px;}
+.big_letter{ vertical-align:super; font-size:14px;}
