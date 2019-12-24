@@ -5,7 +5,6 @@ body{
 	background-repeat: no-repeat;
 	font-family: Arial, Helvetica, sans-serif; 
 	font-size: 20px; 
-	color: #FFFFFF; 
 }
 p{
 	margin:0px;
@@ -79,6 +78,7 @@ input{
 	height:50px;
 	text-align:center;
 	
+	color: #FFFFFF; 
 	display:inline-block;
 	background: #0881fa;
 	cursor:pointer;
