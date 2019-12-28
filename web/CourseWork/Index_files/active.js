@@ -57,7 +57,7 @@ function toggleDialog(){
 	}
 	//открытие
 	else{
-		$("#dialog").animate({"margin-left":"-450px"}, 300, function() {});
+		$("#dialog").animate({"margin-left":"-350px"}, 300, function() {});
 		dialogOn=true;
 	}
 	console.log(knowledge.length);
