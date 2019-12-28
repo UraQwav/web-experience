@@ -197,3 +197,8 @@ input{
 }
 .smoll_letter{ vertical-align:sub; font-size:12px;}
 .big_letter{ vertical-align:super; font-size:14px;}
+@media only screen and (max-width: 760px) {
+	.label{
+		left: 80%;
+	}
+}
