@@ -77,7 +77,6 @@ input{
 	width:50px;
 	height:50px;
 	text-align:center;
-	
 	color: #FFFFFF; 
 	display:inline-block;
 	background: #0881fa;
@@ -91,7 +90,6 @@ input{
 	left: 90%;
 	border: 5px solid rgba(255, 255, 255, 0);
 	animation: 1.5s bor infinite linear;
-	
 }
 @keyframes bor{
 	0% { border: 5px solid #076cd1;}
