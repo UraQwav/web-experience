@@ -94,7 +94,7 @@ var TextScramble = function () {
 // Example
 // ——————————————————————————————————————————————————
 
-var phrases = ['Hi!', 'My name is Sergei', 'And I`m', 'Junior Web developer'];
+var phrases = ['Hi!', 'My name is Sergei', 'And I`m', 'Front End developer'];
 
 var el = document.querySelector('.text');
 var fx = new TextScramble(el);
